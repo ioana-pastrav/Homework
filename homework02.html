@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Homework-Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap&subset=latin-ext" rel="stylesheet">
+        <style>
+            *{
+                font-family: "Inria Serif";
+            }
+            form{
+                margin:50px;
+            }
+            body {
+                background-color: #2E3945;
+            }
+            fieldset{
+                background-color: #3E4852;
+                color:white;
+                margin-bottom: 15px;
+                padding-left: 10%;
+                font-size:14px;
+            }
+            legend{
+                font-size: 17px;
+            }
+            .movie{
+                display: block;
+                margin:0 auto 0 auto;
+            }
+            button {
+                margin-left: 10%;
+                font-size: 17px;
+                padding:5px;
+            }
+            button:hover{
+                color:red;
+
+            }
+           
+        </style>
+    </head>
+    <body>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Contact details </legend>
+                <label for="firstName">First Name: </label>
+                <input id="firstName" name="firstName" type="text" placeholder="First Name"/>
+                <label for="lastName">Last Name: </label>
+                <input id="lastName" name="lastName" type="text" placeholder="Last Name" />
+                <label for="email">Email: </label>
+                <input id="email" name="email" type="email" placeholder="Email"/>
+                <label for="phone">Phone: </label>
+                <input id="phone" name="phone" type="tel" placeholder="+40722001122" maxlength="15"/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose a movie</legend>
+                <label class="movie"> Star Wars <input name="movie" type="radio" value="starWars"/></label>
+                <label class="movie">Alladin <input name="movie" type="radio" value="alladin" /></label>
+                <label class="movie">Klaus <input name="movie" type="radio" value="klaus" /></label>
+                <label class="movie">Pirates of the Caribbean <input name="movie" type="radio" value="piratesOfTheCaribbean" /></label>
+                <label class="movie">Spider-Man <input name="movie" type="radio" value="spiderman" /></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose location</legend>
+                <select  name="cinemaLocation" type="textInput">
+                    <option value="cinemaIulius">Cinema City Iulius Mall</option>
+                    <option value="cinemaIulius">Cinema City Vivo</option>
+                    <option value="empty" selected disabled>Choose location</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Terms and conditions</legend>
+                <input type="checkbox" name="acceptTerms"/> I agree with the <a href="https://movie/terms">Terms & conditions</a>
+            </fieldset>
+
+            <button type="submit">Buy tickets</button>
+        </form>
+
+    </body>
+</html>
