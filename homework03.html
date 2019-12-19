@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>hHomework 3</title>
+         <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap&subset=latin-ext"
+        rel="stylesheet">   
+        <style>
+            body {
+                font-family: "Montserrat", sans-serif;
+                background-color: #efefef;
+            }
+            form{ 
+                box-sizing: content-box;
+                width:240px;
+                height: 290px;
+                background-color: white;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                margin: 80px auto;
+                padding:25px;
+            }
+            .login {
+                border: none;
+                border-bottom: 2px solid #efefef;
+                margin:10px 0;
+                padding:6px 6px 6px 0;
+                width:100%;
+                font-weight: 700;
+                font-size:12px;
+            }
+            .login:focus{
+                border: none;
+                border-bottom: 1px solid #3235DF;
+                outline:none;
+                color:black;
+            }
+            .signinButton {
+                width:100%;
+                background-color:#3235DF;
+                font-family: 'Montserrat', sans-serif;
+                color:white;
+                margin: 25px 0 0 0;
+                border-radius:5px;
+                outline: none;
+                border:none;
+                padding:8px;
+                font-weight: 500;
+
+            }
+            .welcome {
+                font-size: 17px;
+                font-weight: 700;
+                margin-bottom: 5px;
+                margin-top: 20px;
+            }
+            .subscript {
+                font-size: 11px;
+                font-weight: 600;
+                color:#9f9f9f;
+                margin-top:5px;
+                
+            }
+            ::placeholder {
+                color: #afafaf;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+                font-size:11px;
+            }
+            :focus::placeholder{
+                color:black;
+                font-weight: 700;
+            }
+        
+            a {
+                display: block;
+                color: #3235DF;
+                font-size:10px;
+                margin:12px 0 10px 0;
+                font-weight: 500;
+                font-family: "Montserrat", sans-serif;
+                letter-spacing: 0.2px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="POST">
+            <img src="check.JPG"/>
+            <h1 class="welcome"> Welcome back!</h1>
+            <h3 class="subscript">Log in to continue.</h3>
+            <input class="login" name="email" type="email" placeholder="john@gmail.com" />
+            <input class="login" name="password" type="password" placeholder="Password" />
+            <a href="">Forgot your password?</a>
+            <button class="signinButton">Sign in</button>
+        </form>
+    </body>
+</html>
