@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Homework Flex</title>
+        <style>
+            body {
+                margin:0;
+            }
+            .flex-container{
+                display:flex;
+                flex-flow:column wrap;
+                height:100%;
+
+            }
+            
+            .upper{
+                background-color: #376275;
+                flex-grow: 1;
+
+            }
+            .middle{
+                flex-grow: 12;
+                display: flex;
+                flex-flow:row nowrap;
+            }
+            .lower{
+                background-color:#EBA529;
+                flex-grow: 1;
+            }
+            .green{
+                background-color:#22773C;
+                flex-grow: 2;
+            }
+            .beige{
+                background-color:antiquewhite; 
+                flex-grow: 6;
+            }
+            .red{
+                background-color: #FF6F59;
+                flex-grow:2;
+            }
+                
+               
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="upper" ></div>
+            <div class="middle" >
+                <div class="green"></div>
+                <div class="beige"></div>
+                <div class="red"></div>
+            </div>
+            <div class="lower" ></div>
+        </div>
+    </body>
+</html>
