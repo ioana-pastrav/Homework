@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title> Until 2021</title>
+</head>
+<body>
+    <script>
+        const dueDate = new Date (2021, 0, 01, 0, 0);
+        function howMuchUntilNextYear (){
+            
+            const dateNow = Date.now();
+            const daysLeft = Math.round((dueDate - Date.now())/86400000);
+            const hoursLeft = Math.round(((dueDate - Date.now())%86400000)/3600000); 
+            const minutesLeft = Math.round((((dueDate - Date.now())%86400000)%3600000)/60000);
+            const secondsLeft = Math.round(((((dueDate - Date.now())%86400000)%3600000)%60000)/1000);
+
+
+
+            let howMuch = {days:daysLeft,
+                hours: hoursLeft,
+                minutes:minutesLeft,
+                seconds: secondsLeft };
+            return howMuch;
+        }
+
+        console.log('There are : ', howMuchUntilNextYear(), 'left until', dueDate);
+    </script>
+</body>
+</html>

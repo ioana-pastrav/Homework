@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Reverse array</title>
+</head>
+<body>
+    <script>
+
+        const numbers = [1, 2, 3, 4, 5];
+
+        function reverseArray(array){
+            let reverse = array.reduce(function(acc,element){
+                acc.unshift(element);
+                return acc;
+            }, []);
+            return reverse;
+        }
+
+        console.log(reverseArray(numbers));
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Sum of the inbewtween numbers</title>
+</head>
+<body>
+    <script>
+        function sumOfInbewtweenNumbers (a,b){
+            var sum = a + b;
+            if (a<b){
+                for(var i = a + 1; i < b;  i++){
+                    sum = sum + i;
+                    
+                }
+                } else if (a>b) {
+                    for (var j = b + 1; j < a; j++){
+                        sum = sum + j;
+                        
+                    }
+                } else {
+                    console.log('The numbers should not be equal!');
+                }
+                return sum;
+            }
+        
+        console.log(sumOfInbewtweenNumbers(9,1));
+        
+</script>
+    
+</body>
+</html>

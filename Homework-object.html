@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Homeworl object</title>
+</head>
+<body>
+    <script>
+        var animal = {
+            type: 'dog',
+            name: 'Pluto',
+            gut:[],
+            eat(food){
+                return this.gut.push(food);
+            }
+
+        }
+        animal.eat('meat')
+        animal.eat('bone');
+        animal.eat('homework')
+
+        console.log(animal);
+    </script>
+</body>
+</html>

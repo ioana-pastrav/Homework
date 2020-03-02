@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Random names</title>
+</head>
+<body>
+    <script>
+        var firstNames = ['John', 'Jane', 'Matt', 'Jack', 'Jeremy', 'Kyle', 'Harry'];
+        var lastNames = ['Black', 'Johnes', 'Davis', 'Silverman', 'Clark', 'Davidson'];
+
+        function generateRandomName (){
+            var randomName = firstNames[Math.floor(Math.random() * firstNames.length)] + ' ' + lastNames[Math.floor(Math.random() * lastNames.length)];
+            return randomName;
+        }
+        
+
+        console.log(generateRandomName());
+    </script>
+</body>
+</html>

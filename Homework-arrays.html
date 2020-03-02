@@ -1,0 +1,18 @@
+<html>
+<heaed>
+    <ttile>Homework arrays</ttile>
+</heaed>
+<body>
+    <script>
+        var array = [-2, 10, 2, 4, -6, 3];
+        var sumOfPositiveNumbers = array.reduce(function(acc, elem){
+            
+            if(elem > 0){
+                acc = acc + elem;
+            }
+            return acc;
+        }, 0);
+        console.log(sumOfPositiveNumbers);
+    </script>
+</body>
+</html>
